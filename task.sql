@@ -3,9 +3,8 @@ USE ShopDB;
 
 -- Create a table to store countries 
 CREATE TABLE Countries (
-    ID INT,
-    Name VARCHAR(50),
-    PRIMARY KEY (ID)
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    CountryName VARCHAR(100) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE GeoIPCache (
